@@ -6,7 +6,6 @@ import { v4 as uuid } from 'uuid';
 export default function RecipeEdit({selectedRecipe}) {
     const {handleRecipeChange,handleSelectedRecipe}=useContext(RecipeContext);
     function handleChange(changes){
-        console.log("changes called");
         handleRecipeChange(selectedRecipe.id,{...selectedRecipe,...changes} );
         //{...selectedRecipe,...changes}  we are overwritting the new changes with old recipe
     }
@@ -36,7 +35,7 @@ export default function RecipeEdit({selectedRecipe}) {
                 <button onClick={()=>handleSelectedRecipe(undefined)}>&times;</button>
             </div>
             <div className='recipe-edit__details-grid'>
-                <label htmlFor="name" className='recipe-edit__label'>name</label>
+                <label htmlFor="name" className='recipe-edit__label'>Name</label>
                 {/* Normally in js, onChange triggers even when a single letter is changed , whereas onInput gets triggered only when all the changing is finished */
                 // but in react onInput is binded  to onChange itself so using onChange is more prominent
                 }

@@ -74,6 +74,7 @@ textarea.recipe-edit__input{
     .recipe-edit__details-grid,
     .recipe-edit__ingredient-grid{
         grid-template-columns: 1fr;
+        row-gap: 10px;
     }
 }
 /* 

@@ -32,9 +32,7 @@ function App() {
       setSelectedRecipeId(id);
   }
    function Addrecipe(){
-      console.log("Addrecipe() called");
-      console.log(uuid());
-      console.log(uuid());
+  
       const newrecipe={ 
           id:uuid(),//id:uuid() provides unique id everytime
           recipeName:"",

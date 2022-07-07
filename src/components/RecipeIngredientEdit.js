@@ -1,8 +1,6 @@
 import React from 'react'
 import '../css/recipeIngredientEdit.css'
 export default function RecipeIngredientEdit({ingredient,handleIngredientChange,handleIngredientDelete}) {
-  console.log("inside recipeingredientedit.js")
-    console.log(ingredient.id);
     function handleChange(changes){
         handleIngredientChange(ingredient.id,{...ingredient,...changes});
     }

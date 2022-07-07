@@ -25,6 +25,7 @@ html{
 
 .custom{
     max-width: 40px;
-    max-height: 35px;
+    max-height: 30px;
+    margin:auto 0; 
     border: none;
 }
