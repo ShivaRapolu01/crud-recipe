@@ -1,0 +1,30 @@
+/* this below line[is very important] ensures that on different browsers the code functions as expected */
+
+@import 'buttons.css';
+@import '../css/Recipe.css';
+@import 'recipeEdit.css';
+*,*::after,*::before{
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+}
+
+body{
+    background:rgb(18,37,63);
+    color:white; 
+    overflow-y: auto;
+}
+
+html{
+    font-size: 18px;
+}
+
+.mr-1{
+    margin-right: 8px;
+}
+
+.custom{
+    max-width: 40px;
+    max-height: 35px;
+    border: none;
+}
